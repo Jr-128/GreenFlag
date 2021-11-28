@@ -53,8 +53,8 @@
         android:backgroundTint="#A31111"
         android:textColor="#A31111"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="121dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/email_Green"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/email_Green"
@@ -65,8 +65,9 @@
         android:backgroundTint="#16A311"
         android:textColor="#16A311"
         android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/Email_Red"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="118dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/create_pass_red"
@@ -77,8 +78,8 @@
         android:backgroundTint="#A31111"
         android:textColor="#A31111"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/create_pass_green"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/repeat_pswd_red"
@@ -90,7 +91,7 @@
         android:textColor="#A31111"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="430dp" />
+        app:layout_constraintTop_toTopOf="@+id/repeat_pass_green" />
 
     <TextView
         android:id="@+id/repeat_pass_green"
@@ -102,7 +103,7 @@
         android:textColor="#16A311"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="430dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/create_pass_green"
@@ -114,7 +115,7 @@
         android:textColor="#16A311"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
         android:id="@+id/email"
@@ -286,26 +287,27 @@
 
     <ImageView
         android:id="@+id/error2_passwords_dont_match"
-        android:layout_width="257dp"
-        android:layout_height="78dp"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repeatPassword"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_pswd_red"
+        app:layout_constraintVertical_bias="-80.0"
         app:srcCompat="@drawable/error2_passwords_dont_match" />
 
     <ImageView
         android:id="@+id/error1_invalid_password"
-        android:layout_width="243dp"
-        android:layout_height="76dp"
+        android:layout_width="256dp"
+        android:layout_height="57dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_pswd_red"
         app:srcCompat="@drawable/error1_invalid_password" />
 
     <ImageView
@@ -337,28 +339,34 @@
         android:id="@+id/email_green_tick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
         android:visibility="invisible"
-        app:srcCompat="@drawable/tick"
-        tools:layout_editor_absoluteX="361dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/Email_Red"
+        app:srcCompat="@drawable/tick" />
 
     <ImageView
         android:id="@+id/CP_green_tick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
         android:visibility="invisible"
-        app:srcCompat="@drawable/tick"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintEnd_toEndOf="@+id/createPassword"
+        app:layout_constraintTop_toTopOf="@+id/createPassword"
+        app:srcCompat="@drawable/tick" />
 
     <ImageView
         android:id="@+id/RP_green_tick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:visibility="invisible"
-        app:srcCompat="@drawable/tick"
-        tools:layout_editor_absoluteX="361dp"
-        tools:layout_editor_absoluteY="459dp" />
+        app:layout_constraintEnd_toEndOf="@+id/repeatPassword"
+        app:layout_constraintTop_toTopOf="@+id/repeatPassword"
+        app:srcCompat="@drawable/tick" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

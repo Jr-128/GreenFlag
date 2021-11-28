@@ -15,7 +15,7 @@
     <string name="password_requirements3">number, one uppercase and one lower</string>
     <string name="password_requirements4">case letter. You can use special characters.</string>
     <string name="next">Next</string>
-    <string name="error_email">An account already exists<br/>for this email address</string>
+    <string name="error_email">An account already exists<br />for this email address</string>
     <string name="error_pwMatch">Your passwords don\'t match</string>
     <string name="error_pwInvalid">One of the passwords you entered wasn\'t valid</string>
 </resources>

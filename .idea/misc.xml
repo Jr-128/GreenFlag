@@ -5,7 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/border.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.4968085106382979" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.625" />
+        <entry key="app/src/main/res/layout/activity_main3.xml" value="0.335" />
       </map>
     </option>
   </component>
